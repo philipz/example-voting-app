@@ -14,7 +14,7 @@ services:
     ports: ["6379"]
 
   worker.net:
-    build: ./worker.net
+    image: philipz/worker.net #Or use build: ./worker.net
     depends_on:
       - redis     
       - db     
